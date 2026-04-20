@@ -1,0 +1,91 @@
+.header {
+    background-color: #004d00;
+    color: #ffffff;
+    padding: 10px 0;
+    text-align: center;
+    font-size: 24px;
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+}
+
+.nav li {
+    margin: 0 15px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.hero {
+    background: url('hero-image.jpg') no-repeat center center/cover;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.services {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.service {
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    padding: 15px;
+    text-align: center;
+}
+
+.pricing {
+    background-color: #f9f9f9;
+    padding: 40px;
+    text-align: center;
+}
+
+.testimonials {
+    background-color: #e5e5e5;
+    padding: 40px;
+    text-align: center;
+}
+
+.testimonial {
+    font-style: italic;
+    margin: 10px 0;
+}
+
+.contact-form {
+    padding: 20px;
+}
+
+.footer {
+    background-color: #004d00;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+}
+
+@media (max-width: 768px) {
+    .header, .footer {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero {
+        height: 40vh;
+    }
+    .nav {
+        flex-direction: column;
+    }
+}
